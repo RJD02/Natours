@@ -1,2 +1,5 @@
 # Vscode settings
 .vscode/
+
+# Node modules
+node_modules/

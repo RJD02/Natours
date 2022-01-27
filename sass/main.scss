@@ -1,17 +1,18 @@
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "abstract/variables";
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+@import "pages/home";
+
 /*
 COLORS:
 Light green: #7ed56f
 Medium green: #55c57a
 Dark green: #28b485
 */
-
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
-
-$color-dark-grey: #777;
-$color-white: #fff;
-$color-black: #000;
 
 *,
 *::after,
@@ -165,6 +166,11 @@ body {
 
   &:hover {
     transform: translateY(-0.3rem);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
   }
 
   &:active {
@@ -191,11 +197,6 @@ body {
     left: 0;
     z-index: -1;
     transition: all 0.4s;
-  }
-
-  &:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
   }
 
   &--animated {

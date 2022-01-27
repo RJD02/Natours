@@ -1,5 +1,6 @@
 # Vscode settings
 .vscode/
+natours.code-workspace
 
 # Node modules
 node_modules/
